@@ -1,12 +1,13 @@
-// В этом файле должны быть стили для БЭМ-блока page-footer, его элементов,
+// В этом файле должны быть стили для БЭМ-блока about-sert, его элементов,
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
-.page-footer {
+.about-sert {
 
   $block-name:                &; // #{$block-name}__element
-  background: #000;
-  overflow: hidden;
-  color: #fff;
+
+  @media (max-width: $screen-lg) {
+    margin-bottom: 25px;
+  }
 
 }

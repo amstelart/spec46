@@ -38,6 +38,16 @@ $border-radius:               3px !default;
 //   font-style: normal;
 // }
 
+@font-face {
+    font-family: 'Europe';
+    src: url('../fonts/EuropeBoldItalic.woff2') format('woff2'),
+        url('../fonts/EuropeBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
 
 
 body {

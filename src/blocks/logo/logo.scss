@@ -8,4 +8,15 @@
 
   display: block;
   white-space: nowrap;
+  margin-bottom: 25px;
+
+  &__img {
+    margin-bottom: 10px;
+
+  }
+  &__phone {
+    font-style: italic;
+    font-size: 2.571em;
+  }
+
 }

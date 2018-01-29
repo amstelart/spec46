@@ -1,12 +1,15 @@
-// В этом файле должны быть стили для БЭМ-блока page-footer, его элементов,
+// В этом файле должны быть стили для БЭМ-блока contacts, его элементов,
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
-.page-footer {
+.contacts {
 
   $block-name:                &; // #{$block-name}__element
-  background: #000;
-  overflow: hidden;
-  color: #fff;
+  @include row();
+
+  .contacts-item {
+    @include col();
+    @include col(lg, 4);
+  }
 
 }

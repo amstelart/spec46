@@ -5,4 +5,20 @@
 .page-header {
 
   $block-name:                &; // #{$block-name}__element
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  z-index: 2;
+  margin-top: 5.714em;
+  margin-bottom: 7.143em;
+
+  @media (max-width: $screen-lg) {
+    justify-content: inherit;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 2em;
+  }
+
 }

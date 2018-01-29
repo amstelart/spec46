@@ -33,6 +33,11 @@
   &__footer-wrapper {
     flex-shrink: 0;
   }
+
+  &__container {
+    @include container;
+  }
+
 }
 
 *,
