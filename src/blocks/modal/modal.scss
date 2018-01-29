@@ -46,7 +46,7 @@ $z-index-modal:               100 !default;
     height: 100%;
 
     @media (min-width: $screen-lg) {
-      width: 600px;
+      width: 780px;
       height: auto;
 
       #{$block-name}--open & {
@@ -63,11 +63,23 @@ $z-index-modal:               100 !default;
     min-height: 100%;
     background-color: #fff;
     outline: 0;
+    @media (min-width: $screen-lg) {
+      border-radius: 15px;
+    }
   }
 
   &__header {
-    padding: 5px 40px 0 10px;
+    padding: 35px 40px 30px 35px;
     flex-shrink: 0;
+    display: flex;
+    @media (max-width: $screen-sm) {
+      flex-direction: column;
+    }
+  }
+  &__header-img {
+    max-width: 135px;
+    flex-shrink: 0;
+    margin-right: 25px;
   }
 
   &__title {
@@ -75,8 +87,17 @@ $z-index-modal:               100 !default;
     margin-bottom: ($line-height / 2);
     font-size: $font-size--h4;
     line-height: 1.4;
+    font-size: 22px;
+    text-transform: uppercase;
     font-weight: 700;
     color: currentColor;
+  }
+
+  &__caption {
+    color: $color-second;
+    span {
+      color: #000;
+    }
   }
 
   &__close {
@@ -86,12 +107,12 @@ $z-index-modal:               100 !default;
   }
 
   &__body {
-    padding: 0 10px;
+    padding: 0 35px;
     flex-grow: 1;
   }
 
   &__footer {
-    padding: 10px;
+    padding: 35px;
     flex-shrink: 0;
   }
 

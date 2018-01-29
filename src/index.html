@@ -58,7 +58,7 @@
                 <div class="technic-card__image">
                   <img src="img/technic-card-img-01.png" alt="">
                 </div>
-                <div class="technic-card__label">Тех. характеристики</div>
+                <div class="technic-card__label" data-toggle="modal" data-target="#modal-demo" >Тех. характеристики</div>
                 <div class="technic-card__name">КРАН КС-7471А НА СПЕЦШАССИ</div>
                 <div class="technic-card__info">
                   г/подъемность 80 тонн, длина стрелы 38,1 м, с удлинителем (гуськом) 47 м <br>
@@ -70,10 +70,10 @@
                   <img src="img/technic-card-img-02.png" alt="">
                 </div>
                 <div class="technic-card__label">Тех. характеристики</div>
-                <div class="technic-card__name">КРАН КС-7471А НА СПЕЦШАССИ</div>
+                <div class="technic-card__name">КРАН КС-6476 НА ШАССИ МЗКТ</div>
                 <div class="technic-card__info">
-                  г/подъемность 80 тонн, длина стрелы 38,1 м, с удлинителем (гуськом) 47 м <br>
-                  <span>60000 руб.</span> за машиносмену
+                  г/подъемность 50 тонн, длина стрелы 34 м, с удлинителем (гуськом) 49 м<br>
+                  <span>32000 руб.</span> за машиносмену
                 </div>
               </div>
               <div class="technic-card">
@@ -81,10 +81,10 @@
                   <img src="img/technic-card-img-03.png" alt="">
                 </div>
                 <div class="technic-card__label">Тех. характеристики</div>
-                <div class="technic-card__name">КРАН КС-7471А НА СПЕЦШАССИ</div>
+                <div class="technic-card__name">КС-55730 НА ШАССИ МАЗ</div>
                 <div class="technic-card__info">
-                  г/подъемность 80 тонн, длина стрелы 38,1 м, с удлинителем (гуськом) 47 м <br>
-                  <span>60000 руб.</span> за машиносмену
+                  г/подъемность 32 тонны, длина стрелы 21,6 м, с удлинителем (гуськом) - 30 м<br>
+                  <span>15000 руб.</span> за машиносмену
                 </div>
               </div>
               <div class="technic-card">
@@ -92,10 +92,10 @@
                   <img src="img/technic-card-img-04.png" alt="">
                 </div>
                 <div class="technic-card__label">Тех. характеристики</div>
-                <div class="technic-card__name">КРАН КС-7471А НА СПЕЦШАССИ</div>
+                <div class="technic-card__name">КС-5473Б "ДНЕПР" НА СПЕЦШАССИ</div>
                 <div class="technic-card__info">
-                  г/подъемность 80 тонн, длина стрелы 38,1 м, с удлинителем (гуськом) 47 м <br>
-                  <span>60000 руб.</span> за машиносмену
+                  г/подъемность 25 тонн, длина стрелы 24,5 м, с удлинителем (гуськом) 31 м<br>
+                  <span>13000 руб.</span> за машиносмену
                 </div>
               </div>
               <div class="technic-card">
@@ -103,10 +103,10 @@
                   <img src="img/technic-card-img-05.png" alt="">
                 </div>
                 <div class="technic-card__label">Тех. характеристики</div>
-                <div class="technic-card__name">КРАН КС-7471А НА СПЕЦШАССИ</div>
+                <div class="technic-card__name">КРАН КС-5871 НА спецШАССИ</div>
                 <div class="technic-card__info">
-                  г/подъемность 80 тонн, длина стрелы 38,1 м, с удлинителем (гуськом) 47 м <br>
-                  <span>60000 руб.</span> за машиносмену
+                  полноприводный короткобазовый с крабовым ходом г/подъемность 25 тонн, длина стрелы 20,5 м, с удлинителем (гуськом) 32 м<br>
+                  <span>14000 руб.</span> за машиносмену
                 </div>
               </div>
               <div class="technic-card">
@@ -114,10 +114,10 @@
                   <img src="img/technic-card-img-06.png" alt="">
                 </div>
                 <div class="technic-card__label">Тех. характеристики</div>
-                <div class="technic-card__name">КРАН КС-7471А НА СПЕЦШАССИ</div>
+                <div class="technic-card__name">UDS-214 НА ШАССИ КРАЗ</div>
                 <div class="technic-card__info">
-                  г/подъемность 80 тонн, длина стрелы 38,1 м, с удлинителем (гуськом) 47 м <br>
-                  <span>60000 руб.</span> за машиносмену
+                  ковш 0,75 м3<br>
+                  <span>15000 руб.</span> за машиносмену
                 </div>
               </div>
           </div>
@@ -228,6 +228,32 @@
 
     <div class="page__footer-wrapper">
       @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+    <div id="modal-demo" class="modal" tabindex="-1" role="dialog">
+      <div class="modal__dialog" role="document">
+        <div class="modal__content">
+          <div class="modal__header">
+            <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+            <div class="modal__header-img">
+              <img src="img/technic-card-img-01.png" alt="">
+            </div>
+            <div class="modal__header-text">
+              <h4 class="modal__title">КРАН КС-7471А НА СПЕЦШАССИ</h4>
+              <div class="modal__caption">
+                <p>г/подъемность 80 тонн, длина стрелы 38,1 м, с удлинителем (гуськом) 47 м</p>
+                <p><span>60000 руб.</span> за машиносмену</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal__body">
+            <img src="img/KC-55730-img-detail-01.jpg" alt="">
+          </div>
+          <div class="modal__footer">
+            <!-- <button type="button" class="btn" data-dismiss="modal">Закрыть</button> -->
+          </div>
+        </div>
+      </div>
     </div>
 
   </div>

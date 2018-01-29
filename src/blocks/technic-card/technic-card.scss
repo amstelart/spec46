@@ -30,6 +30,12 @@
     display: inline-block;
     position: relative;
     z-index: 2;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background: lighten($color-main, 10%);
+    }
   }
   &__name {
     font-size: 1.714em;
